@@ -35,3 +35,7 @@ chordnames_hook_inter = \chordmode {
     gis4.:m/dis cis4.:m/e
     fis4.:m  b4.:7
 }
+
+chordnames_interinter = \chordmode {
+    e2. s2. d2. cis2.:7
+}

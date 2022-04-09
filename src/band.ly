@@ -47,6 +47,7 @@ voc_melo = {
     \vocal_hook
     \key e \major
     \vocal_inter_hook
+    \vocal_interinter_tachet
   }
 }
 
@@ -69,6 +70,7 @@ guitar_melo = {
     \guitar_melo_hook
     \key e \major
     \guitar_melo_hook_inter
+    \guitar_melo_interinter
   }
 }
 
@@ -80,6 +82,7 @@ chordnames = {
   \chordnames_B
   \chordnames_hook
   \chordnames_hook_inter
+  \chordnames_interinter
 }
 
 \include "guitar_chord.ly"
@@ -100,6 +103,7 @@ guitar_chord = {
   \guitar_chord_hook_dummy
   \key e \major
   \guitar_chord_hook_inter_dummy
+  \guitar_chord_interinter_dummy
 }
 
 \include "lead.ly"
@@ -120,6 +124,7 @@ lead = {
   \lead_hook_tachet
   \key e \major
   \lead_hook_inter
+  \lead_interinter
 }
 
 \include "bass.ly"
@@ -140,10 +145,18 @@ bass = {
   \bass_hook
   \key e \major
   \bass_hook_inter
+  \bass_interinter
 }
 
+\include "drums.ly" 
 drumContents = {
-  R2.
+  \drums_A 
+  \drums_inter_A
+  \drums_AA
+  \drums_B
+  \drums_hook
+  \drums_hook_inter
+  \drums_interinter
 }
 
 \score {

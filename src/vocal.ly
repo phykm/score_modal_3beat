@@ -51,3 +51,7 @@ vocal_hook = \relative c' {
 vocal_inter_hook = \relative c' {
     gis'2. R2. R2. R2. R2. R2. R2. R2. 
 }
+
+vocal_interinter_tachet = {
+    R2. R2. R2. R2.
+}

@@ -31,7 +31,7 @@ guitar_melo_B = {
 
 guitar_melo_BB = {
     <<
-        \new Voice{\voiceOne \relative c' {r8 g4~4. r8 aes4~4. r8 ces4~4. }}
+        \new Voice{\voiceOne \relative c' {ees8 g,4~4. r8 aes4~4. r8 ces4~4. }}
         \new Voice{\voiceTwo \relative c' {ees,2.      f2.      aes2.      }}
     >> 
     \relative c' {r8 des ees f ges bes,}
@@ -59,4 +59,8 @@ guitar_melo_hook_inter = \relative c' {
     e8. c8. e8 g8 g8        a8. g8.  fis4.
     g8. b8. a8 a8 g8        fis4 dis8 e4 fis8
     b,4. cis8. e8.          a8. fis8. b8 b8 a8
+}
+
+guitar_melo_interinter = \relative c' {
+    gis'2.~2. R2. R2.
 }

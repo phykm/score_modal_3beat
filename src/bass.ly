@@ -62,3 +62,7 @@ bass_hook_inter = \relative c, {
     dis8 16 16 16 16 e8 16 16 16 16
     fis8 fis16 a16 gis8 fis8 b,8 dis8     
 }
+
+bass_interinter = \relative c, {
+    e8. 8 16 8 8 8 e8. 8 16 8 8 8 d8. 8 16 8 8 8 cis8. 8 16 8 8 8
+}
