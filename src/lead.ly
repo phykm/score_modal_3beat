@@ -70,7 +70,7 @@ lead_bruckner = \relative c'' {
     <cisis ais>2. R2.
 
     <ais fisis>2. <dis fis,>4.~4~16 16
-    <cis ais>2. <b dis>2.
+    <cis ais>2. <b dis,>2.
     <ais dis,>4. <fis dis>4~16 16
     <gis dis>4. <cis gis>4~16 16
     <cis ais>2.~4.~8. r8.
