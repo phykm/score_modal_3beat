@@ -94,8 +94,8 @@ bass_bruckner = \relative c, {
 
     fis8. 8 16 8 8 8 cis8. 8 16 8 8 8
     dis8. 8 16 8 8 8 8. 8 16 ais8 dis8 fis8
-    ais8. 8 16 8 8 8 eisis8. 8 16 8 8 8
-    ais8. 8 16 8 8 8 8. 8 16 eisis8 ais8 eisis8
+    ais8. 8 16 8 8 8 eis8. 8 16 8 8 8
+    ais8. 8 16 8 8 8 8. 8 16 eis8 ais8 eis8
 
     dis8. 8 16 8 8 8 b8. 8 16 8 8 8
     fis8. 8 16 8 8 8 gis8. 8 16 8 8 8
