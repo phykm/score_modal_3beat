@@ -1,3 +1,21 @@
+bass_intro_one_tachet =  {
+    R2. R2. R2. R2. R2. R2. R2. R2. 
+}
+
+bass_intro_two = \relative c, {
+    fis16 8 16 8      cis8 fis8 cis8
+    b16 8 16 8      e8 gis8 e8
+    d16 8 16 8      a8 d8 a8
+    gis16 8 16 8    cis8 d8 cis8
+
+    fis16 8 16 8      b,8 16 16 16 16
+    cis16 8 16 8      dis8 16 16 16 16
+    eis16 8 16 8      fis8 16 16 16 16
+    gis16 8 16 8      cis,8 16 16 16 16
+    
+    fis8. 8 16 8 8 8 e8. 8 16 8 8 8 d8. 8 16 8 8 8 cis8. 8 16 8 8 8
+}
+
 bass_A = \relative c, {
     fis2. fis8. gis8. a8 b8 cis8
     d2. d,8. e8. fis8 gis8 a8

@@ -1,3 +1,27 @@
+% イントロのデュエット
+guitar_melo_intro_one = \relative c' {
+    fis8. cis8. ais8 gis8 fis8 e4. e8. b'8.
+    d8.   a8.   fis8 e8   d8   cis8. eis8. gis8 b8 cis8
+    fis8. cis8. fis8 b8   fis'8 eis8 cis8 ais8 fis'8 dis8 ais8
+    gis'8. b8.~4.~2.
+}
+
+% イントロの合奏メロ
+guitar_melo_intro_two = \relative c' {
+    fis8. cis8. ais8 gis8 fis8 
+    e'8. b8.     gis8 fis8 e8
+    d'8. a8.     fis8 a8 b8
+    cis8. gis8.  b8 a8 gis8
+
+    fis'8. cis8. b8 a8 gis8
+    gis'8. eis8. fis8 gis8 ais8
+    ais8. cis,8. ais'8 gis8 fis8
+    b8. ais8. gis8 fis8 eis8
+
+    fis2.~2. R2. R2.
+}
+
+% ここから本体
 guitar_melo_A = \relative c' {
     R2. R2. R2. R2. R2. R2. 
     R2. fis8. cis8. a8 gis8 fis8~4. r4. R2. R2.
@@ -5,7 +29,10 @@ guitar_melo_A = \relative c' {
 }
 
 guitar_melo_inter_A = \relative c' {
-    fis4. r4. R2. R2. R2.
+    fis8. cis8. ais8 gis8 fis8 
+    e'8. b8.     gis8 fis8 e8
+    d'8. a8.     fis8 a8 b8
+    cis8. gis8.  b8 a8 gis8
 }
 
 guitar_melo_AA = {

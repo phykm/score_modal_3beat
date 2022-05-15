@@ -1,3 +1,11 @@
+chordnames_intro = \chordmode {
+    s2. s2. s2. s2. s2. s2. s2. s2. 
+    fis4. fis4./cis e4./b e4. d4. d4./a cis4./gis cis4.
+    fis4.:m b4.:m ais4.:m/cis dis4.:m ais4.:m/eis dis4.:m/fis gis4.:m cis4.
+    fis2. e2. d2.  cis2.
+}
+
+
 chordnames_A = \chordmode {
     fis2.:m s2. d2. s2. 
     b2.:m gis2.:dim cis2. fis2.:m

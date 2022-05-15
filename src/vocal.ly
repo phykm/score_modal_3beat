@@ -1,3 +1,11 @@
+vocal_intro_tachet = {
+    R2. R2. R2. R2.
+    R2. R2. R2. R2.
+
+    R2. R2. R2. R2. R2. R2. R2. R2.
+    R2. R2. R2. R2.
+}
+
 vocal_A = \relative c' {
     cis8. b8. a8 gis8 fis8 cis2.
 

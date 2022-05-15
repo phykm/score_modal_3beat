@@ -11,7 +11,68 @@
 % lowtom toml -1
 % bassdrum bd
 
+% intro
+drums_upper_intro_one = \drummode {
+  \voiceOne
+  R2. R2. R2. R2. R2. R2. R2.r4.
+  sn16 sn16 tomml16 tomml16 toml16 toml16
+}
+drums_foot_intro_one = \drummode {
+  \voiceTwo
+  R2. R2. R2. R2. R2. R2. R2.r4.
+  bd8 r8 r8
+}
+drums_intro_one = {
+  <<
+    \new DrumVoice \drums_upper_intro_one
+    \new DrumVoice \drums_foot_intro_one
+  >>
+}
 
+% intro合奏 % hookinterと同じだが、後半変化させない。そのあとの4小節はinterinterと同じ(Aへの導入なので)
+drums_upper_intro_two = \drummode {
+  \voiceOne
+    cymc8 hho8 hho8 <hho sn>8 hho8 hho8 
+    hho8 hho8 hho8 <hho sn>8 hho8 hho16 sn16
+    hho8 hho8 hho8 <hho sn>8 hho8 hho8 
+    hho8 hho8 hho8 <hho sn>8 hho16 sn16 sn16 sn16  
+
+    cymc8 hho8 hho8 <hho sn>8 hho8 hho8 
+    hho8 hho8 hho8 <hho sn>8 hho8 hho16 sn16
+    hho8 hho8 hho8 <hho sn>8 hho8 hho8 
+    hho8 hho8 hho8 <hho sn>8 hho16 sn16 sn16 sn16  
+
+    cymc8 hho8 hho8 <hho sn>8 hho8 hho8
+    hho8 hho8 hho8 <hho sn>8 hho8 hho8 
+    hho8 hho8 hho8 <hho sn>8 hho8 hho8 
+    hho8 hho8 hho8 sn16 sn16 tommh16 tommh16 tomml16 tomml16
+}
+
+drums_foot_intro_two = \drummode {
+  \voiceTwo
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd4 
+
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd4 
+
+    bd8. 8 16 r4 bd8 
+    bd8. 8 16 r4 bd8 
+    bd8. 8 16 r4 bd8 
+    bd8. 8 16 r8 bd8 bd8 
+}
+
+drums_intro_two = {
+    <<
+    \new DrumVoice \drums_upper_intro_two
+    \new DrumVoice \drums_foot_intro_two
+    >>
+}
+ 
 drums_upper_A = \drummode {
     \voiceOne
     cymc16 tommh16 tommh16 tomml16 tomml8 sn8 tommh16 tommh16  tomml16 tomml16
@@ -233,7 +294,7 @@ drums_upper_interinter = \drummode {
     cymc8 hho8 hho8 <hho sn>8 hho8 hho8
     hho8 hho8 hho8 <hho sn>8 hho8 hho8 
     hho8 hho8 hho8 <hho sn>8 hho8 hho8 
-    hho8 hho8 hho8 <hho sn>8 tommh16 tommh16 tomml16 tomml16
+    hho8 hho8 hho8 sn16 sn16 tommh16 tommh16 tomml16 tomml16
 }
 
 drums_foot_interinter = \drummode {

@@ -34,6 +34,7 @@ voc_melo = {
   \clef "treble_8"
   {
     \key fis \minor
+    \vocal_intro_tachet %intro
     \vocal_A
     \vocal_inter_A_tachet
     \vocal_AA
@@ -48,6 +49,16 @@ voc_melo = {
     \key e \major
     \vocal_inter_hook
     \vocal_interinter_tachet
+    \key fis \minor %2nd verse
+    \vocal_AA % Aメロ繰り返さない
+    \key fis \major
+    \vocal_B
+    \key ees \major
+    \vocal_BB
+    \key ces \major
+    \vocal_BBB
+    \key b \minor
+    \vocal_hook % TODO 最後少し変える。
   }
 }
 
@@ -57,6 +68,8 @@ guitar_melo = {
   \clef "treble_8"
   {
     \key fis \minor
+    \guitar_melo_intro_one % intro
+    \guitar_melo_intro_two % intro
     \guitar_melo_A
     \guitar_melo_inter_A
     \guitar_melo_AA
@@ -71,11 +84,22 @@ guitar_melo = {
     \key e \major
     \guitar_melo_hook_inter
     \guitar_melo_interinter
+    \key fis \minor % 2nd verse
+    \guitar_melo_AA
+    \key fis \major
+    \guitar_melo_B
+    \key ees \major
+    \guitar_melo_BB
+    \key ces \major
+    \guitar_melo_BBB
+    \key b \minor
+    \guitar_melo_hook
   }
 }
 
 \include "chordnames.ly" 
 chordnames = {
+  \chordnames_intro %intro
   \chordnames_A
   \chordnames_inter_A
   \chordnames_AA
@@ -83,6 +107,11 @@ chordnames = {
   \chordnames_hook
   \chordnames_hook_inter
   \chordnames_interinter
+  % 2nd verse
+  \chordnames_AA
+  \chordnames_B
+  \chordnames_hook
+  
 }
 
 \include "guitar_chord.ly"
@@ -90,6 +119,8 @@ guitar_chord = {
   \global
   \clef "treble_8"
   \key fis \minor
+  \guitar_chord_intro_one %intro
+  \guitar_chord_intro_two %intro
   \guitar_chord_A
   \guitar_chord_inter_A_dummy
   \guitar_chord_AA
@@ -104,6 +135,16 @@ guitar_chord = {
   \key e \major
   \guitar_chord_hook_inter_dummy
   \guitar_chord_interinter_dummy
+  \key fis \minor % 2nd verse
+  \guitar_chord_AA % Aメロ繰り返さない
+  \key fis \major
+  \guitar_chord_B_dummy
+  \key ees \major
+  \guitar_chord_BB_dummy
+  \key ces \major
+  \guitar_chord_BBB_dummy
+  \key b \minor
+  \guitar_chord_hook_dummy
 }
 
 \include "lead.ly"
@@ -111,8 +152,10 @@ lead = {
   \global
   \clef "treble"
   \key fis \minor
+  \lead_intro_one_tachet %intro
+  \lead_intro_two %intro
   \lead_A_tachet
-  \lead_inter_A_tachet
+  \lead_inter_A
   \lead_AA_tachet
   \key fis \major
   \lead_B_tachet
@@ -125,6 +168,16 @@ lead = {
   \key e \major
   \lead_hook_inter
   \lead_interinter
+  \key fis \minor % 2nd verse
+  \lead_AA_tachet
+  \key fis \major
+  \lead_B_tachet
+  \key ees \major
+  \lead_BB_tachet
+  \key ces \major
+  \lead_BBB_tachet
+  \key b \minor
+  \lead_hook_tachet
 }
 
 \include "bass.ly"
@@ -132,6 +185,8 @@ bass = {
   \global
   \clef "bass_8"
   \key fis \minor
+  \bass_intro_one_tachet
+  \bass_intro_two
   \bass_A
   \bass_inter_A
   \bass_AA
@@ -146,10 +201,22 @@ bass = {
   \key e \major
   \bass_hook_inter
   \bass_interinter
+  \key fis \minor %2nd verse
+  \bass_AA % Aメロ繰り返さない
+  \key fis \major
+  \bass_B
+  \key ees \major
+  \bass_BB
+  \key ces \major
+  \bass_BBB 
+  \key b \minor
+  \bass_hook
 }
 
 \include "drums.ly" 
 drumContents = {
+  \drums_intro_one
+  \drums_intro_two
   \drums_A 
   \drums_inter_A
   \drums_AA
@@ -157,6 +224,10 @@ drumContents = {
   \drums_hook
   \drums_hook_inter
   \drums_interinter
+  % 2nd verse 
+  \drums_AA
+  \drums_B
+  \drums_hook
 }
 
 \score {
