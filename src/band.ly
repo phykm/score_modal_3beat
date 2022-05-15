@@ -1,6 +1,6 @@
 \version "2.23.6"
 \header {
-  title = "Modefull 3 Beat"
+  title = "Modal 3 Beat"
   composer = "Katsuhiko Matsuhisa"
   tagline = \markup {
     \column {
@@ -58,7 +58,18 @@ voc_melo = {
     \key ces \major
     \vocal_BBB
     \key b \minor
-    \vocal_hook % TODO 最後少し変える。
+    \vocal_hook_var 
+    % ブルックナー
+    \key e \major
+    \vocal_bruckner
+    % サビ繰り返し
+    \key b \minor
+    \vocal_hook
+    \key e \major
+    \vocal_last_tachet_to_coda
+    % リフ休み
+    % coda 休み
+    \bar "|."
   }
 }
 
@@ -94,6 +105,17 @@ guitar_melo = {
     \guitar_melo_BBB
     \key b \minor
     \guitar_melo_hook
+    % ブルックナーパート
+    \key e \major
+    \guitar_melo_bruckner
+    % サビ繰り返し
+    \key b \minor
+    \guitar_melo_hook
+    \key e \major
+    \guitar_melo_last
+    % リフを冒頭の転調verと1verseの直後verで二回やる。
+    % coda 休み
+    \bar "|."
   }
 }
 
@@ -111,7 +133,14 @@ chordnames = {
   \chordnames_AA
   \chordnames_B
   \chordnames_hook
-  
+  % ブルックナー
+  \chordnames_bruckner
+  % サビ繰り返し
+  \chordnames_hook
+  \chordnames_last
+  % リフ2回繰り返し
+  % coda
+  \bar "|."
 }
 
 \include "guitar_chord.ly"
@@ -145,6 +174,17 @@ guitar_chord = {
   \guitar_chord_BBB_dummy
   \key b \minor
   \guitar_chord_hook_dummy
+  % ブルックナー
+  \key e \major 
+  \guitar_chord_bruckner_dummy 
+  % サビ繰り返し
+  \key b \minor
+  \guitar_chord_hook_dummy
+  \key e \major
+  \guitar_chord_last_dummy
+  % リフ二回(イントロと1verse直後)
+  % coda
+  \bar "|."
 }
 
 \include "lead.ly"
@@ -178,6 +218,17 @@ lead = {
   \lead_BBB_tachet
   \key b \minor
   \lead_hook_tachet
+  % ブルックナーパート
+  \key e \major
+  \lead_bruckner
+  % サビ繰り返し
+  \key b \minor
+  \lead_hook_tachet
+  \key e \major
+  \lead_last
+  % リフ2回
+  % coda休み
+  \bar "|."
 }
 
 \include "bass.ly"
@@ -211,6 +262,17 @@ bass = {
   \bass_BBB 
   \key b \minor
   \bass_hook
+  % ブルックナー
+  \key e \major
+  \bass_bruckner
+  % サビ繰り返し
+  \key b \minor
+  \bass_hook
+  \key e \major
+  \bass_last
+  % リフ二回
+  % coda休み
+  \bar "|."
 }
 
 \include "drums.ly" 
@@ -228,6 +290,14 @@ drumContents = {
   \drums_AA
   \drums_B
   \drums_hook
+  % ブルックナー
+  \drums_bruckner
+  % サビ繰り返し
+  \drums_hook
+  \drums_last
+  % リフ二回(イントロ後半verと1verse直後ver)
+  % coda(最後の6連打)
+  \bar "|."
 }
 
 \score {

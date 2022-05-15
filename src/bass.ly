@@ -84,3 +84,46 @@ bass_hook_inter = \relative c, {
 bass_interinter = \relative c, {
     e8. 8 16 8 8 8 e8. 8 16 8 8 8 d8. 8 16 8 8 8 cis8. 8 16 8 8 8
 }
+
+% ブルックナーパート
+bass_bruckner = \relative c, {
+    e8. 8 16 8 8 8 b8. 8 16 8 8 8
+    cis8. 8 16 8 8 8 8. 8 16 gis8 cis8 e8
+    gis8. 8 16 8 8 8 dis8. 8 16 8 8 8
+    gis8. 8 16 8 8 8 8. 8 16 dis8 gis8 dis8
+
+    fis8. 8 16 8 8 8 cis8. 8 16 8 8 8
+    dis8. 8 16 8 8 8 8. 8 16 ais8 dis8 fis8
+    ais8. 8 16 8 8 8 eisis8. 8 16 8 8 8
+    ais8. 8 16 8 8 8 8. 8 16 eisis8 ais8 eisis8
+
+    dis8. 8 16 8 8 8 b8. 8 16 8 8 8
+    fis8. 8 16 8 8 8 gis8. 8 16 8 8 8
+    dis'8. 8 16 8 8 8 gis8. 8 16 cis,8 8 8
+    fis8. 8. 8. 8. 8. 8. 8. r8. 
+}
+
+% ラスト
+bass_last = \relative c, {
+    e16 8 16 8      b8 e8 b8
+    a16 8 16 8      d8 fis8 d8
+    c16 8 16 8      g8 c8 g8
+    fis16 8 16 8    b8 c8 b8
+
+    e16 8 16 8      a,8 16 16 16 16
+    b16 8 16 8      cis8 16 16 16 16
+    dis16 8 16 8      e8 16 16 16 16
+    fis16 8 16 8      b,8 16 16 16 16
+
+    e16 8 16 8      b8 e8 b8
+    a16 8 16 8      d8 fis8 d8
+    c16 8 16 8      g8 c8 g8
+    fis16 8 16 8    b8 c8 b8
+
+    e16 8 16 8      a,8 16 16 16 16
+    b16 8 16 8      cis8 16 16 16 16
+    dis8 16 16 16 16 e8 16 16 16 16
+    fis8 fis16 a16 gis8 fis8 b,8 dis8  
+
+    e2.~2. R2. R2. 
+}

@@ -56,10 +56,34 @@ vocal_hook = \relative c' {
     e4. g4 b8 c4. b4 a8 a4. gis4 e8 a4. b4 a8
 }
 
+% 2nd verseで次に繋ぐための変化
+vocal_hook_var = \relative c' {
+    d2. cis4. fis4. b,4. ais4 fis8  b4 cis8 d8 e8 fis8
+    g2. fis4. b4.   e,4. dis4 b8    e4 b8 cis4.
+
+    d2. cis4. fis4. b,4. e4 fis8  b4 a8 g8 fis8 e8
+    e4. g4 b8 c4. b4 a8 a4. gis4. a4. b4. % ちょっと違う
+}
+
 vocal_inter_hook = \relative c' {
     gis'2. R2. R2. R2. R2. R2. R2. R2. 
 }
 
 vocal_interinter_tachet = {
     R2. R2. R2. R2.
+}
+
+% ブルックナーパート
+vocal_bruckner = \relative c'' {
+    cis4 b8~4.~2. r4. a4. gis4. fis4. 
+    eis8 gis4~4. fisis4.~4~16 16 gis2. R2.
+
+    R2. R2. R2. R2. R2. R2. R2. R2.
+    R2. R2. R2. R2. R2. R2. R2. R2.
+}
+
+vocal_last_tachet_to_coda = \relative c'' {
+    gis2. R2. R2. R2. R2. R2. R2. R2. 
+    R2. R2. R2. R2. R2. R2. R2. R2. 
+    R2. R2. R2. R2. 
 }

@@ -47,3 +47,22 @@ chordnames_hook_inter = \chordmode {
 chordnames_interinter = \chordmode {
     e2. s2. d2. cis2.:7
 }
+
+% ブルックナーパート
+chordnames_bruckner = \chordmode {
+    e2. b2. cis2.:m6 cis2.:m
+    gis2. dis2. gis2. s2.
+    fis2. cis2. dis2.:m6 dis2.:m
+    ais2. eis2. ais2. s2.
+    dis2. b2. fis2. gis2.
+    dis2.:m gis4.:m cis4.:m fis2.:7 s2. 
+}
+
+% ラスト
+chordnames_last = {
+    \chordnames_hook_inter
+    \chordnames_hook_inter
+        \chordmode {
+        e2. d2. c2. b2.
+    }
+}

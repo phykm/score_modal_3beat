@@ -310,3 +310,130 @@ drums_interinter = {
     \new DrumVoice \drums_foot_interinter
   >>
 }
+
+
+
+% ブルックナーパートはhookの延長したのと同じ。
+drums_upper_bruckner = \drummode {
+  \voiceOne
+    cymc8 hho8 hho8 <hho sn>8 hho8 hho8   hho8 hho8 hho8 <hho sn>8 hho8 hho16 sn16
+    hho8 hho8 hho8 <hho sn>8 hho8 hho8    hho8 hho8 hho8 <hho sn>8 hho16 sn16 sn16 sn16
+
+    cymc8 hho8 hho8 <hho sn>8 hho8 hho8   hho8 hho8 hho8 <hho sn>8 hho8 hho16 sn16
+    hho8 hho8 hho8 <hho sn>8 hho8 hho8    hho8 hho8 hho8 <hho sn>8 hho16 sn16 sn16 sn16
+
+    cymc8 hho8 hho8 <hho sn>8 hho8 hho8   hho8 hho8 hho8 <hho sn>8 hho8 hho16 sn16
+    hho8 hho8 hho8 <hho sn>8 hho8 hho8    hho8 hho8 hho8 <hho sn>8 hho16 sn16 sn16 sn16
+
+    cymc8 hho8 hho8 <hho sn>8 hho8 hho8   hho8 hho8 hho8 <hho sn>8 hho8 hho16 sn16
+    hho8 hho8 hho8 <hho sn>8 hho8 hho8    hho8 hho8 hho8 <hho sn>8 hho16 sn16 sn16 sn16
+
+    cymc8 hho8 hho8 <hho sn>8 hho8 hho8   hho8 hho8 hho8 <hho sn>8 hho8 hho16 sn16
+    hho8 hho8 hho8 <hho sn>8 hho8 hho8    hho8 hho8 hho8 <hho sn>8 hho16 sn16 sn16 sn16
+
+    cymc8 hho8 hho8 <hho sn>8 hho8 hho8   hho8 hho8 hho8 <hho sn>8 hho16 sn16 sn16 sn16
+    <hhho sn>8 hhho16 sn16 hhho8 % 付点八分連打
+    <hhho sn>8 hhho16 sn16 hhho8 
+    <hhho sn>8 hhho16 sn16 hhho8
+    sn16 sn16 r8 r8% 休んでアクセント
+}
+
+drums_foot_bruckner = \drummode {
+  \voiceTwo
+    bd8. 8 16 r8 bd8 bd8 
+    bd8. 8 16 r8 bd8 bd8
+    bd8. 8 16 r8 bd8 bd8
+    bd8. 8 16 r8 bd4
+
+    bd8. 8 16 r8 bd8 bd8 
+    bd8. 8 16 r8 bd8 bd8
+    bd8. 8 16 r8 bd8 bd8
+    bd8. 8 16 r8 bd4
+
+    bd8. 8 16 r8 bd8 bd8 
+    bd8. 8 16 r8 bd8 bd8
+    bd8. 8 16 r8 bd8 bd8
+    bd8. 8 16 r8 bd4
+
+    bd8. 8 16 r8 bd8 bd8 
+    bd8. 8 16 r8 bd8 bd8
+    bd8. 8 16 r8 bd8 bd8
+    bd8. 8 16 r8 bd4
+
+    bd8. 8 16 r8 bd8 bd8 
+    bd8. 8 16 r8 bd8 bd8
+    bd8. 8 16 r8 bd8 bd8
+    bd8. 8 16 r8 bd4
+
+    bd8. 8 16 r8 bd8 bd8 
+    bd8. 8 16 r8 bd4
+    8 8 8 8 8 8 8 8 8 8 r8 r8
+}
+
+drums_bruckner = {
+  <<
+    \new DrumVoice \drums_upper_bruckner
+    \new DrumVoice \drums_foot_bruckner
+  >>
+}
+
+
+% ラスト:イントロのリフパターンと1verse後のリフパターンの連結
+drums_upper_last = \drummode {
+  \voiceOne
+  % introパターン(変奏なし)
+    cymc8 hho8 hho8 <hho sn>8 hho8 hho8 
+    hho8 hho8 hho8 <hho sn>8 hho8 hho16 sn16
+    hho8 hho8 hho8 <hho sn>8 hho8 hho8 
+    hho8 hho8 hho8 <hho sn>8 hho16 sn16 sn16 sn16  
+
+    cymc8 hho8 hho8 <hho sn>8 hho8 hho8 
+    hho8 hho8 hho8 <hho sn>8 hho8 hho16 sn16
+    hho8 hho8 hho8 <hho sn>8 hho8 hho8 
+    hho8 hho8 hho8 <hho sn>8 hho16 sn16 sn16 sn16 
+  % hook interパターン変奏あり
+    cymc8 hho8 hho8 <hho sn>8 hho8 hho8 
+    hho8 hho8 hho8 <hho sn>8 hho8 hho16 sn16
+    hho8 hho8 hho8 <hho sn>8 hho8 hho8 
+    hho8 hho8 hho8 <hho sn>8 hho16 sn16 sn16 sn16  
+
+    cymc8 hho8 hho8 <hho sn>8 hho8 hho16 sn16
+    hho8 hho8 hho8 <hho sn>8 hho8 hho16 sn16
+    hho8 hho8 hho8 <cymr tomml>8 hho8 hho16 sn16
+    <cymr toml>8 <hho tomml>8 <hho sn>8 tommh16 tommh16 sn16 sn16 sn16 sn16  
+  % 鳴らして...最後に16分連打
+    cymc2.~2. R2. r4. <sn toml>16 16 16 16 16 16
+}
+
+drums_foot_last = \drummode {
+  \voiceTwo 
+  % introパターン
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd4 
+
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd4 
+  % 1verse直後パタン
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd4 
+
+    bd16 8 16 8 r8 bd8 bd8 
+    bd16 8 16 8 r8 bd8 bd8 
+    bd8. bd16 bd8 r8 bd8 bd8
+    bd8. bd8. bd8 bd8 bd8
+  % 鳴らして...連打
+    bd4. r4. R2. R2. r4. bd8 8 8 
+}
+
+drums_last = {
+  <<
+    \new DrumVoice \drums_upper_last
+    \new DrumVoice \drums_foot_last
+  >>
+}
