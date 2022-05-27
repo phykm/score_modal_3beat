@@ -123,14 +123,14 @@ guitar_melo_bruckner =  \relative c' {
 
 guitar_melo_last = \relative c' {
     e8. b8. gis8 fis8 e8 
-    d'8. a8.     fis8 e8 d8
-    c'8. g8.     e8 g8 a8
+    d'8. a8.     fis8 a8 b8
+    c8. g'8.     e8 g8 a8
     b8. fis8.  a8 g8 fis8
 
-    e'8. b8. a8 g8 fis8
+    e8. b8. a8 g8 fis8
     fis'8. dis8. e8 fis8 gis8
     gis8. b,8. gis'8 fis8 e8
-    a8. gis8. fis8 e8 dis8
+    a8. gis8. fis8 gis8 a8
 
     gis8. e8. gis,8 b8 e8  d4. fis4 d8
     e8. c8. e8 g8 g8        a8. g8.  fis4.
