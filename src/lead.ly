@@ -19,8 +19,15 @@ lead_intro_two = \relative c'' {
     R2. R2.
 }
 
-lead_inter_A = \relative c'' {
-    fis2. gis2. a2. b4 a8 gis4.
+lead_inter_A = {
+    <<
+        \new Voice{\voiceOne \relative c'' {
+            fis2. gis2. a2. b4 a8 gis4.
+        }}
+        \new Voice{\voiceTwo \relative c'' {
+            fis,2. gis2. a2. b4 a8 gis4.
+        }}
+    >> 
 }
 
 
