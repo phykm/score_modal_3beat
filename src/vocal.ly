@@ -83,7 +83,7 @@ vocal_bruckner = \relative c'' {
 }
 
 vocal_last_tachet_to_coda = \relative c'' {
-    gis2. R2. R2. R2. R2. R2. R2. R2. 
+    gis2. fis2. r4. g4. fis4.~fis8 e8 fis8  e2. b'2. r4. cis4.~ cis8. b8.~b4. 
     R2. R2. R2. R2. R2. R2. R2. R2. 
     R2. R2. R2. R2. 
 }
