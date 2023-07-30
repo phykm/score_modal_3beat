@@ -77,7 +77,7 @@ guitar_melo_hook = \relative c' {
 
     fis8. e8. d8 cis8 b8    e8. d8. cis8 b8 a8
     d8.   g,8. ais8 b8 cis8 dis8. e8. g8 fis8 a8
-    b8.  a8.  g8 fis8 e8    a8. g8. fis8 e8 d8
+    b8.  a8.  g8 fis8 e8~   e8 a8 g8 fis8 e8 d8
     e2~8 gis,8              fis'4 cis8 dis4.
 }
 
@@ -95,23 +95,23 @@ guitar_melo_interinter = \relative c' {
 % ブルックナーパート(調号変えずに強行するのでダブルシャープがすごいことになる)
 
 guitar_melo_bruckner =  \relative c' {
-    gis'8. fis8. e8 dis8 cis8
-    fis8. e8. dis8 cis8 b'8
+    gis'8. fis8. e8 dis8 cis8~
+    cis8 fis8 e8 dis8 cis8 b'8
     a8. e8. cis8 e8 fis8
     gis8. dis8. e8 fis8 gis8
 
-    gis8. dis8. cis8 bis8 ais8
-    ais'8. gis8. fisis8 eis8 dis8
+    gis8. dis8. cis8 bis8 ais8~
+    ais8 ais'8 gis8 fisis8 eis8 dis8
     eis8. gis8. ais8 bis8 bis,8
     dis8. fisis8. gis8 ais8 bis8
 
-    ais8. gis8. fis8 eis8 dis8
-    gis8. fis8. eis8 dis8 cis'8
+    ais8. gis8. fis8 eis8 dis8~
+    dis8 gis8 fis8 eis8 dis8 cis'8
     b8. fis8. dis8 fis8 gis8
     ais8. eis8. fis8 gis8 ais8
 
-    ais8. eis8. dis8 cisis8 bis8
-    bis'8. ais8. gisis8 fisis8 eis8
+    ais8. eis8. dis8 cisis8 bis8~
+    bis8 bis'8 ais8 gisis8 fisis8 eis8
     fisis8. ais8. bis8 cisis8 cisis,8
     eis8. gisis8. ais8 bis8 cisis8
 
@@ -129,8 +129,8 @@ guitar_melo_last = \relative c' {
 
     e8. b8. a8 g8 fis8
     fis'8. dis8. e8 fis8 gis8
-    gis8. b,8. gis'8 fis8 e8
-    a8. gis8. fis8 gis8 a8
+    gis8. b,8. gis'8 fis8 e8~
+    e8 a8 gis8 fis8 e8 dis8
 
     gis8. e8. gis,8 b8 e8  d4. fis4 d8
     e8. c8. e8 g8 g8        a8. g8.  fis4.
